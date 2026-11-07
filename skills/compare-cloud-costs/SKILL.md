@@ -137,7 +137,7 @@ Ask in plain words, at most a few questions, only where the answer moves the num
 ## Relationship to the AI Architect (two layers, same rules)
 
 This skill is the short form of the Architect's instrumentation. The detailed form is the
-AI Architect Interaction Guide (68 follow-up questions across 13 categories, distilled from
+AI Architect Interaction Guide (118 follow-up questions across 15 sections, distilled from
 Microsoft's and AWS's agent skills plus the catalog's own filter fields). Same rules, two
 layers: the Architect's system prompt carries this skill's rules in full — they are short
 enough to hold in the prompt — and consults the guide when it needs the detailed follow-up
