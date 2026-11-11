@@ -57,10 +57,20 @@ the catalog's product lens: `vm→compute`, `database→database`, `serverless�
 Always pass the category — skipping it silently defaults every query to `compute`.
 
 **Workload IDs.** `estimate_workload_architecture` takes a slug from
-https://comparecloudcosts.com/workloads, e.g. `3-tier-web`, `serverless-web-app`,
-`rag-ai-app`, `k8s-app-platform`, `ecommerce-microservices`, `streaming-analytics`,
-`data-warehouse-bi`, `ml-training-hosting`, `agentic-ai-swarm`. If an ID is unknown, the
-tool returns the list of valid IDs — use one of those, never guess a slug.
+https://comparecloudcosts.com/workloads. All 36 architecture templates are supported:
+`serverless-fallback-buffer`, `ai-gateway-proxy`, `api-rate-limiting-auth-gateway`,
+`cross-cloud-event-router`, `rag-ai-app`, `container-api-alb`, `serverless-http-api`,
+`external-partner-rest-api`, `serverless-web-app`, `3-tier-web`, `realtime-streaming-analytics`,
+`ecommerce-microservices`, `ml-training-hosting`, `k8s-app-platform`, `hpc-scientific`,
+`saas-paas-app`, `data-warehouse-bi`, `defense-in-depth-analytics-platform`,
+`disaster-recovery`, `content-media-platform`, `compliance-ready-web-app`,
+`rag-ai-knowledge-base`, `smart-manufacturing`, `event-driven-image-processing`,
+`hybrid-cloud-network`, `zero-trust-edge`, `event-driven-api`, `voice-ai-assistant`,
+`agentic-ai-swarm`, `saga-orchestrated-ecommerce`, `transactional-outbox-cdc`,
+`partitioned-pubsub-consumer-groups`, `cqrs-event-sourcing`, `cdc-cache-invalidation`,
+`multi-tier-caching-web-stack`, `customer-portal`.
+(Historical aliases such as `streaming-analytics` and `three-tier-web-app` are automatically supported).
+If an ID is unknown, the tool returns the list of valid IDs — use one of those, never guess a slug.
 
 **How to chain them.** A pricing question usually goes: `compare_cloud_pricing` for the
 head-to-head numbers → `search_ai_models` if the workload uses LLMs → `lookup_datacenter_compliance`
