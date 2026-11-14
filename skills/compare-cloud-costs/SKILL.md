@@ -57,7 +57,7 @@ the catalog's product lens: `vm→compute`, `database→database`, `serverless�
 Always pass the category — skipping it silently defaults every query to `compute`.
 
 **Workload IDs.** `estimate_workload_architecture` takes a slug from
-https://comparecloudcosts.com/workloads. All 36 architecture templates are supported:
+https://comparecloudcosts.com/workloads. All 40 architecture templates are supported:
 `serverless-fallback-buffer`, `ai-gateway-proxy`, `api-rate-limiting-auth-gateway`,
 `cross-cloud-event-router`, `rag-ai-app`, `container-api-alb`, `serverless-http-api`,
 `external-partner-rest-api`, `serverless-web-app`, `3-tier-web`, `realtime-streaming-analytics`,
@@ -68,7 +68,8 @@ https://comparecloudcosts.com/workloads. All 36 architecture templates are suppo
 `hybrid-cloud-network`, `zero-trust-edge`, `event-driven-api`, `voice-ai-assistant`,
 `agentic-ai-swarm`, `saga-orchestrated-ecommerce`, `transactional-outbox-cdc`,
 `partitioned-pubsub-consumer-groups`, `cqrs-event-sourcing`, `cdc-cache-invalidation`,
-`multi-tier-caching-web-stack`, `customer-portal`.
+`multi-tier-caching-web-stack`, `customer-portal`, `kubernetes-ingress-gateway`,
+`remote-mcp-server`, `llm-inference-serving`, `ephemeral-ci-cd-runners`.
 (Historical aliases such as `streaming-analytics` and `three-tier-web-app` are automatically supported).
 If an ID is unknown, the tool returns the list of valid IDs — use one of those, never guess a slug.
 
